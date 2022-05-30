@@ -12,5 +12,6 @@ namespace Newsy.Core.Repositories
         Task<List<Article>> GetAllWithAuthorAsync();
         Task<List<Article>> GetAllWithAuthorAndCategoryAsync(int categoryId);
         Task<Article> GetByIdWithAuthorAndCategoryAsync(int id);
+        Task<List<Article>> GetAllWithCategoryAuthorByAuthorIdAsync(int authorId);
     }
 }

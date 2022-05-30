@@ -27,7 +27,7 @@ namespace Newsy.Api.Controllers
         }
 
         [HttpGet("GetAll/{categoryId}")]
-        public async Task<ActionResult<List<ArticleDto>>> GetAllArticle(int categoryId = 1)
+        public async Task<ActionResult<List<ArticleDto>>> GetAllArticle(int categoryId = 0)
         {
             var articles = await _articleService.GetAllWithCategoryAuthor(categoryId);
 
@@ -109,6 +109,20 @@ namespace Newsy.Api.Controllers
             await _articleService.UpdateArticle(articleToBeUpdated, article);
 
             return Ok();
+        }
+
+        [Authorize]
+        [HttpPut("Update/{id}")]
+        public async Task<ActionResult<List<ArticleDto>>> GetArticlesFromCurrentAuthor()
+        {
+            int authorId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+            var articles = await _articleService.GetAllWithCategoryAuthorByAuthorId(authorId);
+
+            var articlesDto = _mapper.Map<List<Article>, List<ArticleDto>>(articles);
+
+            return Ok(articlesDto);
+
         }
 
     }

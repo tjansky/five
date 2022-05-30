@@ -29,7 +29,7 @@ namespace Newsy.Data.Repositories
                 .Include(x => x.Category)
                 .ToListAsync();
 
-            if (categoryId != 1)
+            if (categoryId != 0)
             {
                 articleList = articleList.Where(x => x.CategoryId == categoryId).ToList();
             }
@@ -43,6 +43,15 @@ namespace Newsy.Data.Repositories
                 .Include(x => x.Author)
                 .Include(x => x.Category)
                 .SingleOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<List<Article>> GetAllWithCategoryAuthorByAuthorIdAsync(int authorId)
+        {
+            return  await NewsyDbContext.Articles
+                .Include(x => x.Author)
+                .Include(x => x.Category)
+                .Where(x => x.AuthorId == authorId)
+                .ToListAsync();
         }
 
         private NewsyDbContext NewsyDbContext

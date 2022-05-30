@@ -15,5 +15,6 @@ namespace Newsy.Core.Services
         Task<Article> CreateArticle(Article article);
         Task UpdateArticle(Article articleToBeUpdated, Article article);
         Task DeleteArticle(Article article);
+        Task<List<Article>> GetAllWithCategoryAuthorByAuthorId(int authorId);
     }
 }

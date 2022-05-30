@@ -20,4 +20,3 @@ C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.csp
 C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.dll
 C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\ref\Newsy.Core.dll
 C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.pdb
-C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.csproj.AssemblyReference.cache

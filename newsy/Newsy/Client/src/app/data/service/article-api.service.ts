@@ -10,7 +10,7 @@ export class ArticleApiService {
 
   constructor(private http: HttpClient) { }
 
-  getArticles(categoryId = 1) {
+  getArticles(categoryId = 0) {
     return this.http.get<Article[]>(environment.baseUrl + '/Article/GetAll/' + categoryId);
   }
 }
