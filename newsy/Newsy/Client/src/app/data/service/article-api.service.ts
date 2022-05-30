@@ -26,11 +26,11 @@ export class ArticleApiService {
     return this.http.delete(environment.baseUrl + '/Article/DeleteById/' + articleId);
   }
 
-  createArticle() {
-
+  createArticle(title: string, content: string, categoryId: number) {
+    return this.http.post(environment.baseUrl + '/Article/Create', {title: title, content: content, categoryId: categoryId});
   }
 
-  updateArticle() {
-    
+  updateArticle(articleId: number, title: string, content: string, categoryId: number) {
+    return this.http.put(environment.baseUrl + '/Article/Update/' + articleId, {title: title, content: content, categoryId: categoryId});
   }
 }

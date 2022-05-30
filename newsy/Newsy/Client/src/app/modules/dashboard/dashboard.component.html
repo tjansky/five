@@ -2,11 +2,11 @@
 <div class="dashbouard-card" *ngFor="let a of articles$ | async">
     <app-article-card  [article]="a"></app-article-card>
     <div>
-        <div>Edit</div>
+        <div [routerLink]="['update', a.id]">Edit</div>
         <div (click)="onArticleDelete(a.id)">Delete</div>
     </div>
 </div>
 
 <br> <br>
 
-<button class="btn btn-primary">Add new article</button>
+<button routerLink="/dashboard/create" class="btn btn-primary">Add new article</button>

@@ -36,19 +36,17 @@ export class EditCreateComponent implements OnInit {
   }
 
   onSubmit(form: FormGroup) {
+    const data = form.value;
     if(this.isCreate) {
-
+      this.articleApiService.createArticle(data.title, data.content, data.categoryId).subscribe(a => {
+        this.router.navigate(['/articles']);
+      });
     } else {
-
+      this.articleApiService.updateArticle(this.articleId, data.title, data.content, data.categoryId).subscribe(a => {
+        this.router.navigate(['/articles']);
+      });
     }
   }
 
-  private updateArticle() {
-
-  }
-
-  private createArticle() {
-
-  }
 
 }
