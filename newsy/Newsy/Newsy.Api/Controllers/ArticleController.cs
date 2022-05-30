@@ -112,7 +112,7 @@ namespace Newsy.Api.Controllers
         }
 
         [Authorize]
-        [HttpPut("Update/{id}")]
+        [HttpGet("GetArticleFromCurrentAuthor")]
         public async Task<ActionResult<List<ArticleDto>>> GetArticlesFromCurrentAuthor()
         {
             int authorId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);

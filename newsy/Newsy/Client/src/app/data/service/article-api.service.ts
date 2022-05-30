@@ -13,4 +13,8 @@ export class ArticleApiService {
   getArticles(categoryId = 0) {
     return this.http.get<Article[]>(environment.baseUrl + '/Article/GetAll/' + categoryId);
   }
+
+  getArticlesFromCurrentAuthor() {
+    return this.http.get<Article[]>(environment.baseUrl + '/Article/GetArticleFromCurrentAuthor');
+  }
 }
