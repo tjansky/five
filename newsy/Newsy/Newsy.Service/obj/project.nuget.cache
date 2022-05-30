@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "VAv/WJANhRetjF8ZhCuGsT7RpYx22NDKw5W5thu51AkM6p9x+IPMj11PgzMyvXwSkh9R2bsZ5FAME/phT7YDVg==",
+  "success": true,
+  "projectFilePath": "C:\\Spremnik\\programi\\five\\newsy\\Newsy\\Newsy.Service\\Newsy.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tomislav\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Tomislav\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.18.0\\microsoft.identitymodel.abstractions.6.18.0.nupkg.sha512",
+    "C:\\Users\\Tomislav\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.18.0\\microsoft.identitymodel.jsonwebtokens.6.18.0.nupkg.sha512",
+    "C:\\Users\\Tomislav\\.nuget\\packages\\microsoft.identitymodel.logging\\6.18.0\\microsoft.identitymodel.logging.6.18.0.nupkg.sha512",
+    "C:\\Users\\Tomislav\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.18.0\\microsoft.identitymodel.tokens.6.18.0.nupkg.sha512",
+    "C:\\Users\\Tomislav\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.18.0\\system.identitymodel.tokens.jwt.6.18.0.nupkg.sha512",
+    "C:\\Users\\Tomislav\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

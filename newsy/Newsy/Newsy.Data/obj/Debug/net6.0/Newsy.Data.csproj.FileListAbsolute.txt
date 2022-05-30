@@ -1,0 +1,17 @@
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\Newsy.Data.deps.json
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\Newsy.Data.runtimeconfig.json
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\Newsy.Data.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\ref\Newsy.Data.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\Newsy.Data.pdb
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\Newsy.Core.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\bin\Debug\net6.0\Newsy.Core.pdb
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.csproj.AssemblyReference.cache
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.AssemblyInfoInputs.cache
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.AssemblyInfo.cs
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.csproj.CoreCompileInputs.cache
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.csproj.CopyComplete
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\ref\Newsy.Data.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.pdb
+C:\Spremnik\programi\newsy\Newsy\Newsy.Data\obj\Debug\net6.0\Newsy.Data.genruntimeconfig.cache

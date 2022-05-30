@@ -1,0 +1,15 @@
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\bin\Debug\net6.0\Newsy.Service.deps.json
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\bin\Debug\net6.0\Newsy.Service.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\bin\Debug\net6.0\ref\Newsy.Service.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\bin\Debug\net6.0\Newsy.Service.pdb
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.AssemblyInfoInputs.cache
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.AssemblyInfo.cs
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.csproj.CoreCompileInputs.cache
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\ref\Newsy.Service.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.pdb
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\bin\Debug\net6.0\Newsy.Core.dll
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\bin\Debug\net6.0\Newsy.Core.pdb
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.csproj.AssemblyReference.cache
+C:\Spremnik\programi\newsy\Newsy\Newsy.Service\obj\Debug\net6.0\Newsy.Service.csproj.CopyComplete

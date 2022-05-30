@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lerDQZecg4yQhm8Jttmmd+aGIySHrSuEKbRHfIkrPys=",
+  "Source": "Newsy.Api",
+  "BasePath": "_content/Newsy.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b62db2a6-1dac-4baf-a95d-64e9be9c2ddd": {
+      "ProjectGuid": "b62db2a6-1dac-4baf-a95d-64e9be9c2ddd",
+      "DisplayName": "Newsy.Api",
+      "ColorIndex": 0
+    },
+    "052264d7-4552-44ca-95cd-6f405b03d87b": {
+      "ProjectGuid": "052264d7-4552-44ca-95cd-6f405b03d87b",
+      "DisplayName": "Newsy.Core",
+      "ColorIndex": 1
+    },
+    "ebfb9081-25ce-4a93-af27-862c722eb89b": {
+      "ProjectGuid": "ebfb9081-25ce-4a93-af27-862c722eb89b",
+      "DisplayName": "Newsy.Data",
+      "ColorIndex": 2
+    },
+    "acd20cc0-968f-4248-bc25-37dd3f6c869a": {
+      "ProjectGuid": "acd20cc0-968f-4248-bc25-37dd3f6c869a",
+      "DisplayName": "Newsy.Service",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
