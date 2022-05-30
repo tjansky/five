@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ArticleCardComponent } from './component/article-card/article-card.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ArticleCardComponent
+  ],
   imports: [
     TooltipModule.forRoot(),
     CommonModule,
@@ -20,7 +23,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    TooltipModule
+    TooltipModule,
+    ArticleCardComponent
   ]
 })
 export class SharedModule { }

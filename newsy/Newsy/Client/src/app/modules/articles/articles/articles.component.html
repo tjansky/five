@@ -7,19 +7,5 @@
 <br>
 
 <div>
-
-    <div>
-        <div>SLIKA</div>
-
-        <div>
-            <div>TITLE</div>
-            <div>CONtent lorem ipsuim lorem ispum</div>
-            <div>
-                <div>Tomislav Janksy</div>
-                <div>26/07/2022</div>
-            </div>
-        </div>
-
-    </div>
-
+    <app-article-card *ngFor="let a of articles$ | async" [article]="a"></app-article-card>
 </div>
