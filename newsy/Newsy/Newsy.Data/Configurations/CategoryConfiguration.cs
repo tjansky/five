@@ -15,8 +15,12 @@ namespace Newsy.Data.Configurations
         {
 
             builder
-                .Property(c => c.Name)
-                .IsRequired();
+                .HasKey(m => m.Id);
+
+            builder
+                .Property(m => m.Id)
+                .UseIdentityColumn();
+
 
             builder
                 .ToTable("Categories");

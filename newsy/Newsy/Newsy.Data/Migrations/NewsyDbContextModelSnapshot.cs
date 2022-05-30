@@ -25,7 +25,10 @@ namespace Newsy.Data.Migrations
             modelBuilder.Entity("Newsy.Core.Entities.Article", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("AuthorId")
                         .HasColumnType("int");
@@ -49,6 +52,8 @@ namespace Newsy.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
 
                     b.HasIndex("CategoryId");
 
@@ -111,15 +116,15 @@ namespace Newsy.Data.Migrations
 
             modelBuilder.Entity("Newsy.Core.Entities.Article", b =>
                 {
-                    b.HasOne("Newsy.Core.Entities.Category", "Category")
+                    b.HasOne("Newsy.Core.Entities.Author", "Author")
                         .WithMany("Articles")
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Newsy.Core.Entities.Author", "Author")
+                    b.HasOne("Newsy.Core.Entities.Category", "Category")
                         .WithMany("Articles")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

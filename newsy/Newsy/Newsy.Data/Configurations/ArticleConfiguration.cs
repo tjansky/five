@@ -15,9 +15,21 @@ namespace Newsy.Data.Configurations
         {
 
             builder
+                .HasKey(m => m.Id);
+
+            builder
+                .Property(m => m.Id)
+                .UseIdentityColumn();
+
+            builder
                 .HasOne(m => m.Author)
                 .WithMany(a => a.Articles)
-                .HasForeignKey(m => m.Id);
+                .HasForeignKey(m => m.AuthorId);
+
+            builder
+                .HasOne(m => m.Category)
+                .WithMany(a => a.Articles)
+                .HasForeignKey(m => m.CategoryId);
 
             builder
                 .ToTable("Articles");

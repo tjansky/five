@@ -15,6 +15,13 @@ namespace Newsy.Data.Configurations
         {
 
             builder
+                .HasKey(m => m.Id);
+
+            builder
+                .Property(m => m.Id)
+                .UseIdentityColumn();
+
+            builder
                 .ToTable("Authors");
         }
     }

@@ -23,7 +23,8 @@ namespace Newsy.Service
         {
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.NameId, author.FirstName),
+                new Claim(JwtRegisteredClaimNames.NameId, author.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.Name, author.FirstName),
                 new Claim(JwtRegisteredClaimNames.Email, author.Email)
             };
 

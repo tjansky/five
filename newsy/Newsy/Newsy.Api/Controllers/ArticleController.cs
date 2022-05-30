@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newsy.Api.Dtos;
 using Newsy.Core.Entities;
 using Newsy.Core.Services;
+using System.Security.Claims;
 
 namespace Newsy.Api.Controllers
 {
@@ -44,14 +46,16 @@ namespace Newsy.Api.Controllers
             return Ok(articleDto);
         }
 
+        [Authorize]
         [HttpPost("Create")]
         public async Task<ActionResult<ArticleDto>> CreateArticle(CreateArticleDto article)
         {
+            int authorId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
             var category = await _categoryService.GetCategoryById(article.CategoryId);
             if (category == null) return BadRequest("Category does not exist");
 
-            int currentId = 1;
-            var author = await _authorService.GetAuthorById(currentId);
+            var author = await _authorService.GetAuthorById(authorId);
             if (author == null) return Unauthorized("Author does not exist");
 
             Article articleToBeAdded = _mapper.Map<CreateArticleDto, Article>(article);
@@ -68,6 +72,7 @@ namespace Newsy.Api.Controllers
             return Ok(addedArticleDto);
         }
 
+        [Authorize]
         [HttpDelete("DeleteById/{id}")]
         public async Task<ActionResult> DeleteArticle(int id)
         {
@@ -80,14 +85,16 @@ namespace Newsy.Api.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPut("Update/{id}")]
         public async Task<ActionResult> UpdateArticle(int id, CreateArticleDto updateArticleData)
         {
+            int authorId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
             var category = await _categoryService.GetCategoryById(updateArticleData.CategoryId);
             if (category == null) return BadRequest("Category does not exist");
 
-            int currentId = 1;
-            var author = await _authorService.GetAuthorById(currentId);
+            var author = await _authorService.GetAuthorById(authorId);
             if (author == null) return Unauthorized("Author does not exist");
 
             var articleToBeUpdated = await _articleService.GetById(id);

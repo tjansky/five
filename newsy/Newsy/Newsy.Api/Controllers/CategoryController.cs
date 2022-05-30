@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newsy.Api.Dtos;
@@ -30,6 +31,7 @@ namespace Newsy.Api.Controllers
             return Ok(categoriesDto);
         }
 
+        [Authorize]
         [HttpPost("Create")]
         public async Task<ActionResult<CategoryDto>> CreateCategory(CreateCategoryDto categoryToBeCreated)
         {
@@ -40,6 +42,7 @@ namespace Newsy.Api.Controllers
             return Ok(newCategory);
         }
 
+        [Authorize]
         [HttpDelete("Delete/{id}")]
         public async Task<ActionResult> DeleteCategory(int id)
         {

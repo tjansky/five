@@ -22,7 +22,7 @@ namespace Newsy.Api.Controllers
         }
 
 
-        [HttpPost("register")]
+        [HttpPost("Register")]
         public async Task<ActionResult<AuthorWithTokenDto>> RegisterUser([FromBody] RegisterAuthorDto registerAuthorDto)
         {
             using var hmac = new HMACSHA512();
@@ -54,10 +54,10 @@ namespace Newsy.Api.Controllers
             return authorWithToken;
         }
 
-        [HttpPost("login")]
+        [HttpPost("Login")]
         public async Task<ActionResult<AuthorWithTokenDto>> LoginUser([FromBody] LoginAuthorDto loginAuthorDto)
         {
-            // get user from db
+            // get author from db
             var author = await _authorService.GetAuthorByEmail(loginAuthorDto.Email);
 
             if (author == null) return Unauthorized("Invalid credentials");

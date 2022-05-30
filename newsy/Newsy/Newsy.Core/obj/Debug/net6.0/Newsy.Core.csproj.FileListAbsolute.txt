@@ -9,3 +9,14 @@ C:\Spremnik\programi\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.csproj.C
 C:\Spremnik\programi\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.dll
 C:\Spremnik\programi\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\ref\Newsy.Core.dll
 C:\Spremnik\programi\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.pdb
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\bin\Debug\net6.0\Newsy.Core.deps.json
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\bin\Debug\net6.0\Newsy.Core.dll
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\bin\Debug\net6.0\ref\Newsy.Core.dll
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\bin\Debug\net6.0\Newsy.Core.pdb
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.AssemblyInfoInputs.cache
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.AssemblyInfo.cs
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.csproj.CoreCompileInputs.cache
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.dll
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\ref\Newsy.Core.dll
+C:\Spremnik\programi\five\newsy\Newsy\Newsy.Core\obj\Debug\net6.0\Newsy.Core.pdb
