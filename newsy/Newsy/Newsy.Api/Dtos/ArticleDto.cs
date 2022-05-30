@@ -8,6 +8,7 @@
         public DateTime CreationDate { get; set; }
         public string PictureUrl { get; set; }
         public string CategoryName { get; set; }
+        public int CategoryId { get; set; }
         public string AuthorFirstName { get; set; }
         public string AuthorLastName { get; set; }
     }

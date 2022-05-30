@@ -1,0 +1,17 @@
+<br> <br>
+
+<form [formGroup]="editCreateForm" (ngSubmit)="onSubmit(editCreateForm)">
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+    <input formControlName="title" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Article content</label>
+    <textarea formControlName="content" class="form-control" rows="3"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Category</label>
+    <input formControlName="categoryId" type="number" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-success">Save Article</button>
+</form>

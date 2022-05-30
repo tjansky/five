@@ -14,11 +14,23 @@ export class ArticleApiService {
     return this.http.get<Article[]>(environment.baseUrl + '/Article/GetAll/' + categoryId);
   }
 
+  getArticleById(articleId: number) {
+    return this.http.get<Article>(environment.baseUrl + '/Article/GetById/' + articleId);
+  }
+
   getArticlesFromCurrentAuthor() {
     return this.http.get<Article[]>(environment.baseUrl + '/Article/GetArticleFromCurrentAuthor');
   }
 
   deleteArticle(articleId: number) {
     return this.http.delete(environment.baseUrl + '/Article/DeleteById/' + articleId);
+  }
+
+  createArticle() {
+
+  }
+
+  updateArticle() {
+    
   }
 }

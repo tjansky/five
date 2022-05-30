@@ -8,4 +8,5 @@ export interface Article {
     categoryName: string;
     authorFirstName: string;
     authorLastName: string;
+    categoryId: number;
 }
