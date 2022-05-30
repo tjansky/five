@@ -1,0 +1,8 @@
+.category-list{
+    display: flex;
+    gap: 18px;
+}
+
+.category-list div{
+    cursor: pointer;
+}
