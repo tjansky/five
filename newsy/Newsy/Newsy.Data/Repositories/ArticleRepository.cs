@@ -22,12 +22,19 @@ namespace Newsy.Data.Repositories
                 .ToListAsync();
         }
 
-        public async Task<List<Article>> GetAllWithAuthorAndCategoryAsync()
+        public async Task<List<Article>> GetAllWithAuthorAndCategoryAsync(int categoryId)
         {
-            return await NewsyDbContext.Articles
+            var articleList = await NewsyDbContext.Articles
                 .Include(x => x.Author)
                 .Include(x => x.Category)
                 .ToListAsync();
+
+            if (categoryId != 1)
+            {
+                articleList = articleList.Where(x => x.CategoryId == categoryId).ToList();
+            }
+
+            return articleList;
         }
 
         public async Task<Article> GetByIdWithAuthorAndCategoryAsync(int id)

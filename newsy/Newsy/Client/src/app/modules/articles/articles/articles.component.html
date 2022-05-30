@@ -1,6 +1,6 @@
 <br>
 <div class="category-list">
-    <div *ngFor="let c of categories$ | async">{{c.name}}</div>
+    <div (click)="onCategoryClick(c.id)" *ngFor="let c of categories$ | async">{{c.name}}</div>
 </div>
 
 <br>

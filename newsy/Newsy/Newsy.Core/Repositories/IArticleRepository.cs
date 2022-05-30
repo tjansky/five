@@ -10,7 +10,7 @@ namespace Newsy.Core.Repositories
     public interface IArticleRepository : IRepository<Article>
     {
         Task<List<Article>> GetAllWithAuthorAsync();
-        Task<List<Article>> GetAllWithAuthorAndCategoryAsync();
+        Task<List<Article>> GetAllWithAuthorAndCategoryAsync(int categoryId);
         Task<Article> GetByIdWithAuthorAndCategoryAsync(int id);
     }
 }

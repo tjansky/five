@@ -10,7 +10,7 @@ namespace Newsy.Core.Services
     public interface IArticleService
     {
         Task<Article> GetById(int id);
-        Task<List<Article>> GetAllWithCategoryAuthor();
+        Task<List<Article>> GetAllWithCategoryAuthor(int categoryId);
         Task<Article> GetByIdWithCategoryAuthor(int id);
         Task<Article> CreateArticle(Article article);
         Task UpdateArticle(Article articleToBeUpdated, Article article);

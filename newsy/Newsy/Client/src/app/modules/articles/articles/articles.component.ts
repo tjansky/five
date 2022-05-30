@@ -22,4 +22,8 @@ export class ArticlesComponent implements OnInit {
     this.articles$ = this.articleApiService.getArticles();
   }
 
+  onCategoryClick(categoryId: number) {
+    this.articles$ = this.articleApiService.getArticles(categoryId);
+  }
+
 }

@@ -26,10 +26,10 @@ namespace Newsy.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("GetAll")]
-        public async Task<ActionResult<List<ArticleDto>>> GetAllArticle()
+        [HttpGet("GetAll/{categoryId}")]
+        public async Task<ActionResult<List<ArticleDto>>> GetAllArticle(int categoryId = 1)
         {
-            var articles = await _articleService.GetAllWithCategoryAuthor();
+            var articles = await _articleService.GetAllWithCategoryAuthor(categoryId);
 
             var articlesDto = _mapper.Map<List<Article>, List<ArticleDto>>(articles);
 

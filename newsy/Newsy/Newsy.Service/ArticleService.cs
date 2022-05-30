@@ -32,9 +32,9 @@ namespace Newsy.Service
             await _unitOfWork.CommitAsync();
         }
 
-        public async Task<List<Article>> GetAllWithCategoryAuthor()
+        public async Task<List<Article>> GetAllWithCategoryAuthor(int categoryId)
         {
-            return await _unitOfWork.Articles.GetAllWithAuthorAndCategoryAsync();
+            return await _unitOfWork.Articles.GetAllWithAuthorAndCategoryAsync(categoryId);
         }
 
         public async Task<Article> GetById(int id)
