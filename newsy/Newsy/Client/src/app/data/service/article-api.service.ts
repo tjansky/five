@@ -17,4 +17,8 @@ export class ArticleApiService {
   getArticlesFromCurrentAuthor() {
     return this.http.get<Article[]>(environment.baseUrl + '/Article/GetArticleFromCurrentAuthor');
   }
+
+  deleteArticle(articleId: number) {
+    return this.http.delete(environment.baseUrl + '/Article/DeleteById/' + articleId);
+  }
 }

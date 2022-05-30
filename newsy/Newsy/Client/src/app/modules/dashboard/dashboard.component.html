@@ -3,7 +3,7 @@
     <app-article-card  [article]="a"></app-article-card>
     <div>
         <div>Edit</div>
-        <div>Delete</div>
+        <div (click)="onArticleDelete(a.id)">Delete</div>
     </div>
 </div>
 

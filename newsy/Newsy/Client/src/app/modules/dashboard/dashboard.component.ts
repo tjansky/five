@@ -17,4 +17,11 @@ export class DashboardComponent implements OnInit {
     this.articles$ = this.articleApiService.getArticlesFromCurrentAuthor();
   }
 
+  onArticleDelete(articleId: number) {
+    this.articleApiService.deleteArticle(articleId).subscribe(x => {
+      console.log("Deletan artikl")
+      this.articles$ = this.articleApiService.getArticlesFromCurrentAuthor();
+    });
+  }
+
 }
