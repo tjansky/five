@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/service/auth.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { AuthService } from 'src/app/core/service/auth.service';
 export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.registerForm = new FormGroup({
@@ -22,14 +23,14 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(form: FormGroup) {
-    console.log(form.value);
-    
     this.authService.register(
       form.value.firstname,
       form.value.email,
       form.value.pass,
       form.value.lastname
-    ).subscribe(x => console.log("nesto"))
+    ).subscribe(x => {
+      this.router.navigate(['/']);
+    })
   }
 
 }
